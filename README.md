@@ -35,13 +35,13 @@ The waterfall model was chosen due to the relatively small size of the project a
 
 | Date  | Issue  | Resolution |
 |-------|--------|------------|
-|       |        |            |
-|       |        |            | 
+| 12/11/2019| Investigated the best way to import rasters| Discovered the rasterio package which claimed to be faster|
+| 12/11/2019| Rasterio package did not read the raster files and were imported in a different format | Reverted to reading the raster files as was taught in the module| 
+| 15/11/2019| Ideally wanted to load a seperate window for the program to show map, sliders and buttons.| Considered using Qt, Plotly and Bokeh to make an interactive map but all had issues running the program. I eventually settled for using normal widgets and having it appear inline |          
+| 08/12/2019 | Issues arose regarding ensuring the values of each location on the map were between 0 and 255. I had plans to take the maximum value and adjust it to 255 with every other score being proportionate | This solution was needlessly complex as I realised that the weightings could be recalculated in the code to ensure they added to one whilst the user could still chose a value of 0 to 100 on the slider|  
 |       |        |            |  
-|       |        |            |  
-|       |        |            |  
-|       |        |            |  
-|       |        |            |  
+| 12/12/2019| If all sliders were set to 0, the application would crash due an error dividing by 0 | Implemented an If statement in the normaliseWeightings function which  checked if the total score of each slider was 0 before creating the new plot|  
+| 12/12/2019| The above If statement printed an error message but the processData function would still try to run after the issue was corrected in the normaliseWeightings function error would still occur after the error message.|           |  
 |       |        |            |  
 |       |        |            |  
 |       |        |            |  
