@@ -19,6 +19,10 @@ In order to run this model, you will need to unzip the Assignment 2 folder, open
 
 Once open, the user will need to run through the code from top to bottom.
 
+## UML Class Diagram
+
+The UML Class Diagram is included in the zip folder with the notebook and can be downloaded from the github repository. 
+
 ## License 
 
 Please find the license included in the zip folder with this README. It can also be found at the github repository [here](https://github.com/BrettHull/GEOG5995-Assignment-2).
